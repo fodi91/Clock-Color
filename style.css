@@ -1,0 +1,25 @@
+* { margin: 0; padding: 0; }
+
+html, body {
+    height: 100%;
+  }
+  
+  #clock {
+    animation-name: clock;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 80px;
+    margin-top: -40px;
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+    top: 50%;
+    
+  }
+
+@keyframes clock {
+  50% {transform: translateY(100%);}
+  100% {transform: translateY(-100%)}
+}
